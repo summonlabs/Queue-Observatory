@@ -1,0 +1,47 @@
+# Build trees
+/build/
+/build-*/
+/out/
+cmake-build-*/
+
+# Install prefixes used by validation scripts
+/install*/
+/validation-out/
+
+# Editor / OS debris
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+*~
+Thumbs.db
+desktop.ini
+
+# Compiler / linker debris
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.dll
+*.exe
+*.so
+*.dylib
+*.a
+*.log
+*.dmp
+
+# Crash dumps. These patterns are deliberately narrow: a bare "core" pattern
+# would also match a source directory named core, which would quietly exclude
+# a whole layer from the repository.
+/core
+core.[0-9]*
+*.core
+
+# Test output
+*.tmp
+*.ndjson.out
